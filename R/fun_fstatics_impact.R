@@ -342,19 +342,17 @@ fun_fstatics_impact <- function(
 # # [TEST] ------------------------------------------------------------------
 # # - Data ------------------------------------------------------------------
 # library(readr)
-# library(tictoc)
-#
+# 
 # # read_rds(
 # read_rds(
 #   'C:/Users/Cao/Documents/Github/atlas-research/data/efa_model_equamax_15_factors.rds'
 # ) -> efa_model
-#
+# 
 # read_csv(
 #   'C:/Users/Cao/Documents/Github/Atlas-Research/Data/df_atlas_complete_equamax_15_factors.csv'
 # ) -> df_occupations
-#
+# 
 # # - Factor-analytic comparative statics -----------------------------------
-# tic()
 # fun_fstatics_impact(
 #   df_data =
 #     df_occupations
@@ -371,13 +369,4 @@ fun_fstatics_impact <- function(
 #       , max = 100
 #       )
 #   , lgc_aggregate = T
-# ) -> dsds
-# toc()
-#
-# dsds
-#
-# dsds$factors_impact %>% View
-# dsds$items_impact %>% View
-# dsds$aggregate_impact %>% View
-# dsds$overall_impact %>% View
-# dsds$individual_impact %>% View
+# )
